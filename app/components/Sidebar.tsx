@@ -1,5 +1,7 @@
 "use client";
 
+import Filter from "./Filter";
+
 const Sidebar = () => {
   const capabilities = [
     "Business Capabilities 1",
@@ -27,9 +29,7 @@ const Sidebar = () => {
           <h2 className="text-sm font-semibold tracking-widest uppercase dark:text-gray-400">
             Filter
           </h2>
-          <form>
-            <input type="range" />
-          </form>
+          <Filter />
         </div>
       </nav>
     </aside>
