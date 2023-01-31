@@ -1,6 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Archax React Exercise
 
-## Getting Started
+This exercise is to help us better understand your experience in react and typescript, how you would go about structuring your work, code quality, styles, etc...
+
+## Setup
 
 First, run the development server:
 
@@ -22,17 +24,24 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Task
 
-To learn more about Next.js, take a look at the following resources:
+We would like you build a simple data explorer as shown in the image below. This is just a wireframe guide to get you started, you may style it in any way you like to improve the design and UX.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Archax React Exercise wireframe](/archax-react-exercise.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The data is a list of application records and is fetchable at `/data`. Each application has 3 levels of business capabilities. Business capabilities are hierarchical as shown in the image (Business capability 1 -> Business capability 2 -> Business capability 3)
 
-## Deploy on Vercel
+The app should -
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Requests the dataset.
+- Build a hierarchical navigation tree displaying the different levels of business capabilities. Bonus points if we can expand/collapse the navigation tree.
+- Have a range slider to be able to further filter the dataset based on the total spending value
+- Present a list of applications from the data set, showing name and total spend. The list depends on the navigation tree and the range filter
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Additional notes
+
+- Please spend as much time as you feel necessary to complete the task and show off your skills.
+- We will be looking at code/file structure, code quality & best practices, design & user experience.
+- Add comments where necessary or to document any assumptions/considerations you may have.
+- You shouldn't need to use any external libraries
