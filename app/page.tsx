@@ -6,7 +6,7 @@ import { data } from "./data/config";
 const Home = () => {
   return (
     <main className="w-full flex">
-      <Sidebar />
+      <Sidebar data={data} />
       <ApplicationCard data={data} />
     </main>
   );

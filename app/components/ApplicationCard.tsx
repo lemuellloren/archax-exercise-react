@@ -1,24 +1,12 @@
 "use client";
 
 import React from "react";
-
-type Applications = {
-  id: string;
-  name: string;
-  spend: number;
-  BCAP1: string;
-  BCAP2: string;
-  BCAP3: string;
-};
-
-interface ApplicationData {
-  data: Applications[];
-}
+import { ApplicationData } from "../types";
 
 const ApplicationCard: React.FC<ApplicationData> = ({ data }) => {
   return (
     <div className="container p-10 h-screen overflow-auto">
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {data &&
           data.map((data) => (
             <div
