@@ -1,14 +1,15 @@
-import { Inter } from "@next/font/google";
 import ApplicationCard from "./components/ApplicationCard";
 import Sidebar from "./components/Sidebar";
 
-const inter = Inter({ subsets: ["latin"] });
+import { data } from "./data/config";
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="w-full flex">
       <Sidebar />
-      <ApplicationCard />
+      <ApplicationCard data={data} />
     </main>
   );
-}
+};
+
+export default Home;
