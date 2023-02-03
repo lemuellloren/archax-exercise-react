@@ -1,13 +1,11 @@
-import ApplicationCard from "./components/ApplicationCard";
-import Sidebar from "./components/Sidebar";
+import DataExplorer from "./components/DataExplorer";
 
 import { data } from "./data/config";
 
 const Home = () => {
   return (
-    <main className="w-full flex">
-      <Sidebar data={data} />
-      <ApplicationCard data={data} />
+    <main>
+      <DataExplorer data={data} />
     </main>
   );
 };

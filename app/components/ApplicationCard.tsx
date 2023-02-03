@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { FC } from "react";
 import { ApplicationData } from "../types";
 
-const ApplicationCard: React.FC<ApplicationData> = ({ data }) => {
+const ApplicationCard: FC<ApplicationData> = ({ data }) => {
   return (
     <div className="container p-10 h-screen overflow-auto">
       <div className="grid grid-cols-3 gap-4">
@@ -11,7 +11,7 @@ const ApplicationCard: React.FC<ApplicationData> = ({ data }) => {
           data.map((data) => (
             <div
               key={data.id}
-              className="w-full block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+              className="w-full block p-6 rounded-lg shadow bg-gray-800 hover:bg-gray-900"
             >
               <a href="#">
                 <p className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
