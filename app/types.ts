@@ -11,3 +11,9 @@ export type Applications = {
 export interface ApplicationData {
     data: Applications[];
 }
+
+export interface ApplicationNavProps {
+    item: any;
+    setItem: Function;
+    data: Applications[];
+}
