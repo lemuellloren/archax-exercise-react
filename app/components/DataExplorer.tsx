@@ -11,7 +11,7 @@ const DataExplorer: FC<ApplicationData> = ({ data: applications }) => {
   return (
     <div className="w-full flex">
       {/* Sidebar  */}
-      <aside className="h-screen p-6 sm:w-60 dark:bg-gray-900 dark:text-gray-100">
+      <aside className="w-96 h-screen p-6 dark:bg-gray-900 dark:text-gray-100">
         <nav className="space-y-8 text-sm">
           <div className="space-y-2">
             <h2 className="text-sm font-semibold tracking-widest uppercase dark:text-gray-400">
