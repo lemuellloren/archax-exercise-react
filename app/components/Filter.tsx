@@ -1,6 +1,17 @@
 "use client";
 
-const Filter = () => {
+import { FC, useState } from "react";
+import { ApplicationData } from "../types";
+
+const Filter: FC<ApplicationData> = ({ data }) => {
+  const [spend, setSpend] = useState(0);
+  // Triggered when the value gets updated while scrolling the slider:
+  const filterData = data.filter((spending) => {
+    return spending.spend;
+  });
+  const handleInput = (e: any) => {
+    setSpend(e.target.value);
+  };
   return (
     <div>
       <form className="pb-5">
@@ -14,11 +25,12 @@ const Filter = () => {
           id="default-range"
           type="range"
           className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+          onInput={handleInput}
         />
       </form>
       <div className="flex justify-between">
-        <div>min</div>
-        <div>max</div>
+        <div>${spend}</div>
+        <div>$0000</div>
       </div>
     </div>
   );

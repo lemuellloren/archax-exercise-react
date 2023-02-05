@@ -29,7 +29,7 @@ const DataExplorer: FC<ApplicationData> = ({ data: applications }) => {
             <h2 className="text-sm font-semibold tracking-widest uppercase dark:text-gray-400">
               Filter
             </h2>
-            <Filter />
+            <Filter data={item} />
           </div>
           {/* Clear/Reset data  */}
           <button
