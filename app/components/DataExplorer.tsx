@@ -11,13 +11,13 @@ const DataExplorer: FC<ApplicationData> = ({ data: applications }) => {
   return (
     <div className="w-full flex">
       {/* Sidebar  */}
-      <aside className="w-96 h-screen p-6 dark:bg-gray-900 dark:text-gray-100">
+      <aside className="w-52 md:w-96 md:h-screen p-2 md:p-6 dark:bg-gray-900 dark:text-gray-100">
         <nav className="space-y-8 text-sm">
           <div className="space-y-2">
             <h2 className="text-sm font-semibold tracking-widest uppercase dark:text-gray-400">
               Navigation
             </h2>
-            <div className="h-[500px] overflow-auto">
+            <div>
               <ApplicationNav
                 data={applications}
                 item={item}
@@ -33,7 +33,7 @@ const DataExplorer: FC<ApplicationData> = ({ data: applications }) => {
           </div>
           {/* Clear/Reset data  */}
           <button
-            className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            className="w-full text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
             onClick={() => {
               setItem(applications);
             }}
