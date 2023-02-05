@@ -81,7 +81,7 @@ const ApplicationNav: FC<ApplicationNavProps> = ({
                     <div className="p-2 md:p-5 flex flex-col items-baseline divide-y">
                       <button
                         className="py-2"
-                        onClick={(e) => {
+                        onClick={() => {
                           handleOnclick(bca.BCAP1);
                         }}
                       >
@@ -89,7 +89,7 @@ const ApplicationNav: FC<ApplicationNavProps> = ({
                       </button>
                       <button
                         className="py-2"
-                        onClick={(e) => {
+                        onClick={() => {
                           handleOnclick(bca.BCAP2);
                         }}
                       >
@@ -97,7 +97,7 @@ const ApplicationNav: FC<ApplicationNavProps> = ({
                       </button>
                       <button
                         className="py-2"
-                        onClick={(e) => {
+                        onClick={() => {
                           handleOnclick(bca.BCAP3);
                         }}
                       >
